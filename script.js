@@ -19,7 +19,7 @@ const navbar = document.querySelector('nav');
             }
         });
     }, {threshold: 0.12});    
-    document.querySelectorAll('.skill-card, .curso-card, .exp-item, .contato-link, .contato-texto h2, .contato-texto p').forEach(el => {
+    document.querySelectorAll('.skill-card, .projeto-card, .curso-card, .exp-item, .formacao-item, .contato-link, .contato-texto h2, .contato-texto p').forEach(el => {
         el.style.opacity = 0;
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s, transform 0.6s';

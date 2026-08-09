@@ -615,6 +615,136 @@ body {
 .contato-link:nth-child(2) { transition-delay: 0.25s; }
 .contato-link:nth-child(3) { transition-delay: 0.4s; }
 
+#projetos {
+    padding: 6rem 3rem;
+  }
+
+ .projeto-card {
+    border: 1px solid #1e1e2e;
+    padding: 2.5rem;
+    background: #0f0f17;
+    transition: border-color 0.3s, transform 0.3s;
+    
+}
+
+.projeto-card:hover {
+    border-color:#7fff6e;
+    transform: translateY(-4px);
+}
+
+.projeto-tipo {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: #7fff6e;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.projeto-nome {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projeto-desc {
+    max-width: 750px;
+    color: #888;
+    line-height: 1.7;
+}
+
+.projeto-stack{
+  margin-top: 2rem;
+}
+
+.stack-label{
+  display: block;
+  font-family:'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+}
+
+.stack-lista{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.stack-lista span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.projeto-link{
+  display: inline-block;
+  margin-top: 2rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.3s;
+  
+}
+
+.projeto-link:hover {
+  opacity: 0.7;
+}
+
+.formacao-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.formacao-item{
+  border-left: 2px solid var(--accent);
+  padding-left: 2rem;
+  position: relative;
+}
+
+.formacao-data{
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.7rem;
+}
+
+.formacao-curso{
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom:0.4rem;
+}
+
+.formacao-instituicao{
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+
+}
+
+.formacao-desc{
+  max-width: 750px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+#formacao {
+    padding: 6rem 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 @media (max-width: 768px) {
 
   
@@ -648,6 +778,14 @@ body {
     padding: 4rem 1.5rem;
   }
 
+  #projetos{
+    padding: 4rem 1.5rem;
+  }
+
+  #formacao{
+    padding: 4rem 1.5rem;
+  }
+
   
   #cursos {
     padding: 4rem 1.5rem;
@@ -675,6 +813,9 @@ body {
     text-align: center;
     padding: 1.5rem;
   }
+
+ 
+
 
 }
 
